@@ -4,6 +4,7 @@ using Autodesk.AutoCAD.Runtime;
 using Autodesk.AutoCAD.Ribbon;
 using Autodesk.Windows;
 using System.Linq;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using RibbonButton = Autodesk.Windows.RibbonButton;
@@ -16,7 +17,7 @@ public class AddMenuItem {
 
     private const string MY_TAB_ID = "MY_TAB_ID";
 
-    [CommandMethod("NetAddRibbon")]
+    //[CommandMethod("NetAddRibbon")]
     public void CreateRibbon() {
         RibbonControl ribCntrl = RibbonServices.RibbonPaletteSet.RibbonControl;
         RibbonTab tab = ribCntrl.Tabs.Where(q => q.Title.Equals("My custom tab")).FirstOrDefault();
@@ -42,19 +43,13 @@ public class AddMenuItem {
         //create the panel source
         RibbonPanelSource ribPanelSource = new RibbonPanelSource();
         ribPanelSource.Title = "Edit Registry";
-
-        //create the panel
-        RibbonPanel ribPanel = new RibbonPanel();
-        ribPanel.Source = ribPanelSource;
-        ribTab.Panels.Add(ribPanel);
-
         //create button1
         RibbonButton button = new RibbonButton();
         Stream stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(@"DotNetAutoCAD.Command.Resource.button_green.png");
         ImageSourceConverter imageSourceConverter = new ImageSourceConverter();
         //ribButtonDrawCircle.Image
         button.LargeImage = (ImageSource)imageSourceConverter.ConvertFrom(stream);
-        button.Text = "My Draw Circle";
+        button.Text = "Draw Circle";
         button.Orientation = Orientation.Vertical;
         button.Size = RibbonItemSize.Large;
         button.ShowText = true;
@@ -64,6 +59,11 @@ public class AddMenuItem {
         button.CommandHandler = new MyCommandHandler();
 
         ribPanelSource.Items.Add(button);
+
+        //create the panel
+        RibbonPanel ribPanel = new RibbonPanel();
+        ribPanel.Source = ribPanelSource;
+        ribTab.Panels.Add(ribPanel);
     }
 
     private void addPanel1(RibbonTab ribTab) {

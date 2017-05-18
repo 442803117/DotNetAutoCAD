@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetAutoCAD.Command", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetAutoCAD.NetLoadEx", "NetLoadEx\DotNetAutoCAD.NetLoadEx.csproj", "{2B19340E-B5B5-44D1-B923-100116FA34EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{29BE61AA-DDF1-44A8-9E10-372DC1CC15D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistryTools", "RegistryTools\RegistryTools.csproj", "{75080575-7B09-495F-B686-1E4C7725728D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{2B19340E-B5B5-44D1-B923-100116FA34EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B19340E-B5B5-44D1-B923-100116FA34EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B19340E-B5B5-44D1-B923-100116FA34EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29BE61AA-DDF1-44A8-9E10-372DC1CC15D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29BE61AA-DDF1-44A8-9E10-372DC1CC15D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29BE61AA-DDF1-44A8-9E10-372DC1CC15D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29BE61AA-DDF1-44A8-9E10-372DC1CC15D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75080575-7B09-495F-B686-1E4C7725728D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75080575-7B09-495F-B686-1E4C7725728D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75080575-7B09-495F-B686-1E4C7725728D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75080575-7B09-495F-B686-1E4C7725728D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

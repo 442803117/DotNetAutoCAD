@@ -99,6 +99,7 @@
     <Compile Include="Commands\Layer.cs" />
     <Compile Include="Commands\MyCommandHandler.cs" />
     <Compile Include="Commands\PointDistance.cs" />
+    <Compile Include="Init.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
